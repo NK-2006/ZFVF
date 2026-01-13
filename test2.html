@@ -8,39 +8,59 @@
 </head>
 <body>
     <header class="nav_barre">
-        <h2 class="logo">Logo</h2>
+        <h2 class="logo">N_K</h2>
         <nav class="navigation">
-            <ul>
+
+        <button class="sp">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+            <ul class="menus">
                 <li>
-                    <a href="">A propos</a>
+                    <a href="a_propos">A propos</a>
                 </li>
                 <li>
-                    <a href="">Competences</a>
+                    <a href="competences">Competences</a>
                 </li>
                 <li>
-                   <a href=""> Projets</a>
+                   <a href="projets"> Projets</a>
                 </li>
                 <li>
-                    <a href="">Contacts</a>
+                    <a href="contacts">Contacts</a>
                 </li>
             </ul>
         </nav>
     </header>
 
+    <h1>A propos</h1><hr>
     <section id="a_propos">
-        <h1>A propos</h1>
-        <div class="a_proposContainer">
-            <img src="IMG_3441.JPG" alt="">
-            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illum, distinctio saepe expedita nam inventore natus ex, perferendis possimus earum ab unde aliquam. Dolores excepturi, vitae deserunt sint hic doloremque?</P>
-        </div>
+        <article class="a_proposContainer">
+            <img src="WhatsApp Image 2025-04-01 at 00.48.40.jpeg" alt="image_percutante">
+            <P class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorem illum, distinctio saepe expedita nam inventore natus ex, perferendis possimus earum ab unde aliquam. Dolores excepturi, vitae deserunt sint hic doloremque?</P>
+        </article>
     </section>
 
+    <h1>Compétences</h1><hr>
     <section id="competences">
-        <h1>Competences</h1>
+        <article class="grille">nkzmoiehf</article>
+        <article class="grille">jeeje</article>
+        <article class="grille">izzhdm</article>
+        <article class="grille">klihdzçm_za</article>
+
     </section>
 
+    <h1>Projets</h1><hr>
     <section id="projets">
-        <h1>Projets</h1>
+        <article class="card">
+           <p class="par">gfdytza</p>
+           <button class="btn">voir plus</button>
+        </article>
+        <article class="card">
+           <p class="par">gfdytza</p>
+           <button class="btn">voir plus</button>
+        </article>
     </section>
 
     <section id="contacts">
@@ -50,5 +70,15 @@
     <footer>
 
     </footer>
+
+    <script>
+    let btn = document.getElementsByClassName('sp')[0];
+    let menus = document.getElementsByClassName('menus')[0];
+    btn.addEventListener('click' , () => {
+        menus.classList.toggle('opened');
+        btn.classList.toggle('opened');
+        // burger.classList.toggle('xbtn');
+     })
+    </script>
 </body>
 </html>
